@@ -153,7 +153,7 @@ int main(int argc, char *argv[]) {
           for (int j = 1; j <= cx[k]; ++j) {
             std::cout << k << " ";
           }
-          std::cout << "\n";
+          // std::cout << "\n";
         }
         std::cout << std::endl;
         ++count;
