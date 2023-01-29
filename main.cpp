@@ -158,7 +158,8 @@ int main(int argc, char *argv[]) {
         std::cout << std::endl;
         ++count;
       } while (x.next());
-    }        
+      // todo --> need to change the output format
+    }
   }
   
   return 0;
