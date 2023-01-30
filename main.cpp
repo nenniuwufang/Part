@@ -148,7 +148,7 @@ int main(int argc, char *argv[]) {
           break; 
         } 
         // const ulong *cx = x.data();  // cx[1]*1 + cx[2]*2 + ... + cx[n]*n == n
-        for (int k = 1; k <= n; k++) {
+        for (int k = n; k >= 1; k--) {
           if (cx[k] == 0) 
             continue;
           for (int j = 1; j <= cx[k]; ++j) {
