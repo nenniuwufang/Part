@@ -102,7 +102,8 @@ int main(int argc, char *argv[]) {
     return 1;
   }
 
-  // Compute the first limit integer/set partitions of an integer/set of size n.
+  // Compute the first limit integer/set partitions 
+  // of an integer/set of size n.
   // A value limit < 0 means computing all of them.
   if (set_partitions) {
     // set partitions
@@ -139,7 +140,8 @@ int main(int argc, char *argv[]) {
     } else {
       // arbitrary number of parts
       partition x(n);
-      const ulong *cx = x.data();  // cx[1]*1 + cx[2]*2 + ... + cx[n]*n == n
+      const ulong *cx = x.data();
+      // cx[1]*1 + cx[2]*2 + ... + cx[n]*n == n
       x.first();
       int count = 0;
       do {
@@ -147,7 +149,8 @@ int main(int argc, char *argv[]) {
           std::cout << "output limit reached" << std::endl;
           break; 
         } 
-        // const ulong *cx = x.data();  // cx[1]*1 + cx[2]*2 + ... + cx[n]*n == n
+        // const ulong *cx = x.data();
+        // cx[1]*1 + cx[2]*2 + ... + cx[n]*n == n
         for (int k = n; k >= 1; k--) {
           if (cx[k] == 0) 
             continue;
