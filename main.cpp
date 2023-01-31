@@ -142,7 +142,7 @@ int main(int argc, char *argv[]) {
       partition x(n);
       const ulong *cx = x.data();
       // cx[1]*1 + cx[2]*2 + ... + cx[n]*n == n
-      x.first();
+      x.last();
       int count = 0;
       do {
         if ((limit >= 0) && (count >= limit)) { 
@@ -161,7 +161,7 @@ int main(int argc, char *argv[]) {
         }
         std::cout << std::endl;
         ++count;
-      } while (x.next());
+      } while (x.prev());
       // todo --> need to change the output format
     }
   }
